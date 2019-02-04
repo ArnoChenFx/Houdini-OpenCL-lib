@@ -54,7 +54,7 @@ typedef float3 vector;
 ### float angle(float3 v1,float3 v2)
 
 {
-    calculate the angle between vector v1 and v2
+    calculates the angle between vector v1 and v2
 }
 
 
@@ -65,7 +65,7 @@ typedef float3 vector;
 ### float4 qnormalize(float4 q)
 
 {
-    normalize quaternion
+    normalize quaternion q
 }
 
 
@@ -105,7 +105,7 @@ typedef float3 vector;
 ### float4 quaternion(float ang,float3 axi)
 
 {
-    generate a quaternion using angle and axi
+    generates a quaternion using angle and axi
 }
 
 
@@ -113,7 +113,7 @@ typedef float3 vector;
 ### void qconvert(matrix &m,float4 q)
 
 {
-    convert a quaternion to a 3x3matrix
+    converts a quaternion to a 3x3matrix
 }
 
 
@@ -144,14 +144,14 @@ typedef float3 vector;
 ### float4 qslerp(float4 q1,float4 q2,float value)
 
 {
-    quaternion blend between q1 and q2 based on the bias
+    return a quaternion blend between q1 and q2 based on the bias
 }
 
 
 ### void qconvertToaa(float3 &axi,float &angle,float4 q)
 
 {
-    convert a quaternion to axi and angle
+    converts a quaternion to axi and angle
 }
 
 
@@ -189,7 +189,7 @@ typedef float3 vector;
 ### void ident(matrix &a)
 
 {
-    make matrix a become identity matrix
+    makes matrix a become identity matrix
 }
 
 
@@ -197,7 +197,7 @@ typedef float3 vector;
 ### void mCopy(matrix &a,const matrix b)
 
 {
-    copy matrix b to a
+    copies matrix b to a
 }
 
 
@@ -205,7 +205,7 @@ typedef float3 vector;
 ### void mstore(matrix a,int idx, global float * data)
 
 {
-    store matrix to attribute
+    stores matrix to attribute
 }
 
 
@@ -213,7 +213,7 @@ typedef float3 vector;
 ### void mload(matrix a,int idx, global float * data)
 
 {
-    load matix from attribute
+    loads matix from attribute
 }
 
 
@@ -221,7 +221,7 @@ typedef float3 vector;
 ### void mMul(matrix &a,matrix b,matrix c)
 
 {
-    multiply matrix b,c and apply the result to matrix a
+    multiplies matrix b,c and apply the result to matrix a
 }
 
 
@@ -245,7 +245,7 @@ typedef float3 vector;
 ### void mDirScale(matrix &a,const float3 d,float k)
 
 {
-    scale the mateix a ,d is scaled direction,k is strength
+    scales the mateix a ,d is scaled direction,k is strength
 }
 
  
