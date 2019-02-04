@@ -131,7 +131,7 @@ typedef float3 vector;
     //calculate the complex conjugate of quaternion
 }
 
-float4 qlerp(float4 q1,float4 q2,float value)
+### float4 qlerp(float4 q1,float4 q2,float value)
 
 {
     //
