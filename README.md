@@ -1,6 +1,8 @@
 # Houdini-OpenCL-lib
 Some function about quaternion 3x3matrix  and random
 
+##Created by ARNO
+
 typedef float matrix[9];
 
 typedef float3 vector;
