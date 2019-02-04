@@ -5,7 +5,7 @@ typedef float matrix[9];
 typedef float3 vector;
 
 
-#Basic-Math
+# Basic-Math
 
 float lerp(float a,float b,float value)
 
