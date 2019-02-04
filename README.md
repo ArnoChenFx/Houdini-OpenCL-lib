@@ -226,7 +226,7 @@ typedef float3 vector;
 
 
 
-### float3 vmMul(float3 a,const matrix b)
+### float3 vmMul(float3 a,matrix b)
 
 {
     //vector multiply matrix
