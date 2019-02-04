@@ -170,7 +170,7 @@ typedef float3 vector;
 ### float rand(float3 seed)
 
 {
-    //random float
+    //return random float
 }
 
 
@@ -178,7 +178,7 @@ typedef float3 vector;
 ### float3  randv(float3 seed)
 
 {
-    //random float3
+    //return random vector
 }
 
 
