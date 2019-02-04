@@ -148,7 +148,6 @@ float4 qslerp(float4 q1,float4 q2,float value)
 void qconvertToaa(float3 &axi,float &angle,float4 q)
 {
     //convert quaternion to axi and angle
-
 }
 
 
