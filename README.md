@@ -65,7 +65,7 @@ typedef float3 vector;
 ### float4 qnormalize(float4 q)
 
 {
-    normalize quaternion q
+    normalizes quaternion q
 }
 
 
