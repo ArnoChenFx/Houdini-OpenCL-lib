@@ -245,7 +245,7 @@ typedef float3 vector;
 ### void mDirScale(matrix &a,const float3 d,float k)
 
 {
-    //create a scale matrix by the direction of vector
+    //create a scaled matrix ,d is scaled direction,k is strength
 }
 
  
