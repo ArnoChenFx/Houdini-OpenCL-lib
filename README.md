@@ -8,7 +8,7 @@ typedef float3 vector;
 
 # Basic-Math
 
-## float lerp(float a,float b,float value)
+### float lerp(float a,float b,float value)
 
 {
   //
@@ -169,7 +169,6 @@ float4 qlerp(float4 q1,float4 q2,float value)
 
 {
     //random float
-
 }
 
 
@@ -221,7 +220,6 @@ float4 qlerp(float4 q1,float4 q2,float value)
 
 {
     //matrix b,c multiply and apply the result to a
-
 }
 
 
