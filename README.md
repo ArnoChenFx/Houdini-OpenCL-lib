@@ -60,7 +60,7 @@ typedef float3 vector;
 
 
 
-#Quaternion
+# Quaternion
 
 ### float4 qnormalize(float4 q)
 
@@ -86,7 +86,7 @@ typedef float3 vector;
 
 
 
-### float4 ulertoq(float3 v)
+### float4 eulertoq(float3 v)
 
 {
     //convert euler angle to quaternion
@@ -94,7 +94,7 @@ typedef float3 vector;
 
 
 
-### float3 toeuler(float4 q)
+### float3 qtoeuler(float4 q)
 
 {
     //convert quaternion to euler angle
@@ -102,7 +102,7 @@ typedef float3 vector;
 
 
 
-### float4 uaternion(float ang,float3 axi)
+### float4 quaternion(float ang,float3 axi)
 
 {
     //create quaternion form angle and axi
@@ -110,7 +110,7 @@ typedef float3 vector;
 
 
 
-### void convert(matrix &,float4 q)
+### void qconvert(matrix &m,float4 q)
 
 {
     //convert quaternion to matrix
