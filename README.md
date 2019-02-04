@@ -2,12 +2,13 @@
 Some function about quaternion 3x3matrix  and random
 
 typedef float matrix[9];
+
 typedef float3 vector;
 
 
 # Basic-Math
 
-float lerp(float a,float b,float value)
+## float lerp(float a,float b,float value)
 
 {
   //
@@ -15,7 +16,7 @@ float lerp(float a,float b,float value)
 
 
 
-float3 lerpv(float3 a,float3 b,float value)
+## float3 lerpv(float3 a,float3 b,float value)
 
 {
     //
@@ -24,7 +25,7 @@ float3 lerpv(float3 a,float3 b,float value)
 
 
 
-float fit(float a,float smin,float smax,float min,float max)
+## float fit(float a,float smin,float smax,float min,float max)
 
 {
     //
@@ -32,7 +33,7 @@ float fit(float a,float smin,float smax,float min,float max)
 
 
 
-float fit01(float a,float min,float max)
+## float fit01(float a,float min,float max)
 
 {
     //
@@ -40,7 +41,7 @@ float fit01(float a,float min,float max)
 
 
 
-float3 fitv(float3 a,float3 smin,float3 smax,float3 min,float3 max)
+## float3 fitv(float3 a,float3 smin,float3 smax,float3 min,float3 max)
 
 {
     //
@@ -48,7 +49,7 @@ float3 fitv(float3 a,float3 smin,float3 smax,float3 min,float3 max)
 
 
 
-float angle(float3 v1,float3 v2)
+## float angle(float3 v1,float3 v2)
 
 {
     //
