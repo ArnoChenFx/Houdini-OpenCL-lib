@@ -54,7 +54,7 @@ typedef float3 vector;
 ### float angle(float3 v1,float3 v2)
 
 {
-    calculates the angle between vector v1 and v2
+    computes the angle between vector v1 and v2
 }
 
 
