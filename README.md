@@ -189,7 +189,7 @@ typedef float3 vector;
 ### void ident(matrix &a)
 
 {
-    //make matrix a become ident matrix
+    //make matrix become identity matrix
 }
 
 
