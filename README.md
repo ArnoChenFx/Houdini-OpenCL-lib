@@ -13,7 +13,7 @@ typedef float3 vector;
 ### float lerp(float a,float b,float value)
 
 {
-  //
+    return linear interpolation between the value a and b
 }
 
 
@@ -21,7 +21,7 @@ typedef float3 vector;
 ### float3 lerpv(float3 a,float3 b,float value)
 
 {
-    //
+    return linear interpolation between the vector a and b
 }
 
 
@@ -30,7 +30,7 @@ typedef float3 vector;
 ### float fit(float a,float smin,float smax,float min,float max)
 
 {
-    //
+    takes the value in the range (smin.smax) and shifts it to the corresponding value in the new range (min,max)
 }
 
 
@@ -38,7 +38,7 @@ typedef float3 vector;
 ### float fit01(float a,float min,float max)
 
 {
-    //
+    takes the value in the range (0,1) and shifts it to the corresponding value in the new range (min,max)
 }
 
 
@@ -46,7 +46,7 @@ typedef float3 vector;
 ### float3 fitv(float3 a,float3 smin,float3 smax,float3 min,float3 max)
 
 {
-    //
+    takes the vector in range (smin.smax) and shifts it to the corresponding value in the new range (min,max)
 }
 
 
@@ -54,7 +54,7 @@ typedef float3 vector;
 ### float angle(float3 v1,float3 v2)
 
 {
-    //calculate the angle between two vector
+    calculate the angle between vector v1 and v2
 }
 
 
@@ -65,7 +65,7 @@ typedef float3 vector;
 ### float4 qnormalize(float4 q)
 
 {
-    //normalize quaternion
+    normalize quaternion
 }
 
 
@@ -73,7 +73,7 @@ typedef float3 vector;
 ### float3 qrotate(float3 v,float4 q)
 
 {
-    //apply the quaternion to vector
+    rotates vector v by quaternion q
 }
 
 
@@ -81,7 +81,7 @@ typedef float3 vector;
 ### float4 dihedral(float3 v1,float3 v2)
 
 {
-    //calaulate quaternion form two vector
+    computes the rotation quaternion which rotates the vector v1 onto the vector v2
 }
 
 
@@ -89,7 +89,7 @@ typedef float3 vector;
 ### float4 eulertoq(float3 v)
 
 {
-    //convert euler angle to quaternion
+    creates a quaternion from euler angles
 }
 
 
@@ -97,7 +97,7 @@ typedef float3 vector;
 ### float3 qtoeuler(float4 q)
 
 {
-    //convert quaternion to euler angle
+    creates euler angle representing quaternion
 }
 
 
@@ -105,7 +105,7 @@ typedef float3 vector;
 ### float4 quaternion(float ang,float3 axi)
 
 {
-    //create quaternion form angle and axi
+    generate a quaternion using angle and axi
 }
 
 
@@ -113,7 +113,7 @@ typedef float3 vector;
 ### void qconvert(matrix &m,float4 q)
 
 {
-    //convert quaternion to matrix
+    convert a quaternion to a 3x3matrix
 }
 
 
@@ -121,7 +121,7 @@ typedef float3 vector;
 ### float4 qMul(float4 q1,float4 q2)
 
 {
-    //multiply two quaternion
+    multiplies two quaternions and returns the result
 }
 
 
@@ -130,13 +130,13 @@ typedef float3 vector;
 ### float4 qinvert(float4 q)
 
 {
-    //calculate the complex conjugate of quaternion
+    inverts a quaternion rotation
 }
 
 ### float4 qlerp(float4 q1,float4 q2,float value)
 
 {
-    //
+    return linear interpolation between the q1 and q2
 }
 
 
@@ -144,14 +144,14 @@ typedef float3 vector;
 ### float4 qslerp(float4 q1,float4 q2,float value)
 
 {
-    //
+    quaternion blend between q1 and q2 based on the bias
 }
 
 
 ### void qconvertToaa(float3 &axi,float &angle,float4 q)
 
 {
-    //convert quaternion to axi and angle
+    convert a quaternion to axi and angle
 }
 
 
@@ -162,7 +162,7 @@ typedef float3 vector;
 ### float srand(float x,float y)
 
 {
-    //core of random function 
+    core random function
 }
 
 
@@ -170,7 +170,7 @@ typedef float3 vector;
 ### float rand(float3 seed)
 
 {
-    //return random float
+    return random float
 }
 
 
@@ -178,7 +178,7 @@ typedef float3 vector;
 ### float3  randv(float3 seed)
 
 {
-    //return random vector
+    return random vector
 }
 
 
@@ -189,7 +189,7 @@ typedef float3 vector;
 ### void ident(matrix &a)
 
 {
-    //make matrix become identity matrix
+    make matrix a become identity matrix
 }
 
 
@@ -197,7 +197,7 @@ typedef float3 vector;
 ### void mCopy(matrix &a,const matrix b)
 
 {
-    //copy mateix b to a
+    copy matrix b to a
 }
 
 
@@ -205,7 +205,7 @@ typedef float3 vector;
 ### void mstore(matrix a,int idx, global float * data)
 
 {
-    //store matrix to attribute
+    store matrix to attribute
 }
 
 
@@ -213,7 +213,7 @@ typedef float3 vector;
 ### void mload(matrix a,int idx, global float * data)
 
 {
-    //load matix from attribute
+    load matix from attribute
 }
 
 
@@ -221,7 +221,7 @@ typedef float3 vector;
 ### void mMul(matrix &a,matrix b,matrix c)
 
 {
-    //matrix b,c multiply and apply the result to a
+    multiply matrix b,c and apply the result to matrix a
 }
 
 
@@ -229,7 +229,7 @@ typedef float3 vector;
 ### float3 vmMul(float3 a,matrix b)
 
 {
-    //vector multiply matrix
+    vector multiply matrix
 }
 
 
@@ -237,7 +237,7 @@ typedef float3 vector;
 ### void mScale(matrix &a,float3 b)
 
 {
-    //scale the mateix
+    scales the matrix a in three directions simultaneously (X, Y, Z - given by the components of the scale_vector)
 }
 
 
@@ -245,7 +245,7 @@ typedef float3 vector;
 ### void mDirScale(matrix &a,const float3 d,float k)
 
 {
-    //create a scaled matrix ,d is scaled direction,k is strength
+    scale the mateix a ,d is scaled direction,k is strength
 }
 
  
