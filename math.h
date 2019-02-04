@@ -61,7 +61,7 @@ fitv(float3 a,const float3 smin,const float3 smax,const float3 min,const float3 
 static float
 angle(float3 v1,float3 v2)
 {
-    //calculates the angle between vector v1 and v2
+    //computes the angle between vector v1 and v2
     v1 = normalize(v1);
     v2 = normalize(v2);
     private float angle = acos(dot(v1,v2));
