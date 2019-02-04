@@ -5,7 +5,7 @@ typedef float matrix[9];
 typedef float3 vector;
 
 
-#===================================BasicMath==============================
+# ===================================BasicMath==============================
 
 float lerp(float a,float b,float value)
 
@@ -57,7 +57,7 @@ float angle(float3 v1,float3 v2)
 
 
 
-#===================================Quaternion===========================
+# ===================================Quaternion===========================
 
 float4 qnormalize(float4 q)
 
@@ -146,14 +146,15 @@ float4 qslerp(float4 q1,float4 q2,float value)
 
 
 void qconvertToaa(float3 &axi,float &angle,float4 q)
+
 {
     //convert quaternion to axi and angle
 }
-
-
-
-
-#===========================Random======================================
+#
+#
+#
+#
+# ===========================Random======================================
 
 float srand(float x,float y)
 
@@ -181,7 +182,7 @@ float3  randv(float3 seed)
 
 
 
-#=============================Matrix======================================
+# =============================Matrix======================================
 
 void ident(matrix &a)
 
