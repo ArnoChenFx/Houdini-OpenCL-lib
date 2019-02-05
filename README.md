@@ -46,7 +46,7 @@ typedef float3 vector;
 ### float3 fitv(float3 a,float3 smin,float3 smax,float3 min,float3 max)
 
 {
-    takes the vector in range (smin.smax) and shifts it to the corresponding value in the new range (min,max)
+    takes the vector in range (smin.smax) and shifts it to the corresponding vector in the new range (min,max)
 }
 
 
@@ -162,7 +162,7 @@ typedef float3 vector;
 ### float srand(float x,float y)
 
 {
-    core random function
+    core of random
 }
 
 
